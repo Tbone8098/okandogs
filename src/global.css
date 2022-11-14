@@ -1,0 +1,3 @@
+button, .btn {
+    @apply border border-black px-3 rounded-full shadow;
+}
