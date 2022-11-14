@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/okandogs/static/css/main.8bf4b51e.css",
-    "main.js": "/okandogs/static/js/main.cedc7109.js",
+    "main.css": "/okandogs/static/css/main.9fd82e0e.css",
+    "main.js": "/okandogs/static/js/main.b595eeac.js",
     "static/js/787.061ba23e.chunk.js": "/okandogs/static/js/787.061ba23e.chunk.js",
     "static/media/VolunteerPic2.png": "/okandogs/static/media/VolunteerPic2.1df7378fef9bfc14b6c1.png",
     "static/media/Adoption.png": "/okandogs/static/media/Adoption.e93fbfead14af2cfccff.png",
@@ -23,12 +23,12 @@
     "static/media/contactUs.svg": "/okandogs/static/media/contactUs.b366b33f0b41cc36d8d364fc412a7af9.svg",
     "index.html": "/okandogs/index.html",
     "static/media/facebook.svg": "/okandogs/static/media/facebook.44388f6e5ed4a7060bafd47a3cadf5e4.svg",
-    "main.8bf4b51e.css.map": "/okandogs/static/css/main.8bf4b51e.css.map",
-    "main.cedc7109.js.map": "/okandogs/static/js/main.cedc7109.js.map",
+    "main.9fd82e0e.css.map": "/okandogs/static/css/main.9fd82e0e.css.map",
+    "main.b595eeac.js.map": "/okandogs/static/js/main.b595eeac.js.map",
     "787.061ba23e.chunk.js.map": "/okandogs/static/js/787.061ba23e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bf4b51e.css",
-    "static/js/main.cedc7109.js"
+    "static/css/main.9fd82e0e.css",
+    "static/js/main.b595eeac.js"
   ]
 }
