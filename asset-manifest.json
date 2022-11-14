@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/okandogs/static/css/main.8bf4b51e.css",
+    "main.js": "/okandogs/static/js/main.5bca0a53.js",
+    "static/js/787.061ba23e.chunk.js": "/okandogs/static/js/787.061ba23e.chunk.js",
+    "static/media/VolunteerPic2.png": "/okandogs/static/media/VolunteerPic2.1df7378fef9bfc14b6c1.png",
+    "static/media/Adoption.png": "/okandogs/static/media/Adoption.e93fbfead14af2cfccff.png",
+    "static/media/Fostering.png": "/okandogs/static/media/Fostering.53897fee24a92e537582.png",
+    "static/media/herodog.png": "/okandogs/static/media/herodog.20714e0208f55c123c08.png",
+    "static/media/tomandjan2.png": "/okandogs/static/media/tomandjan2.ef51f9debae0203a84b1.png",
+    "static/media/tomandjan1.png": "/okandogs/static/media/tomandjan1.0e6ed4bb5a810ff6f382.png",
+    "static/media/youcanhelp.png": "/okandogs/static/media/youcanhelp.019968da73b8ae4fe5f2.png",
+    "static/media/dog1.png": "/okandogs/static/media/dog1.43c7ae5039f6d169cc9c.png",
+    "static/media/dog3.png": "/okandogs/static/media/dog3.0e1a3137efd2fbffb126.png",
+    "static/media/dog2.png": "/okandogs/static/media/dog2.80a4bf80314d8801f9eb.png",
+    "static/media/dog4.png": "/okandogs/static/media/dog4.879e24f4d623e835d7a6.png",
+    "static/media/logo.png": "/okandogs/static/media/logo.daf9a08b7a382dfad726.png",
+    "static/media/donate.svg": "/okandogs/static/media/donate.1ba041896e65c1b743ffb152b73f8dc8.svg",
+    "static/media/phone2.svg": "/okandogs/static/media/phone2.385ac48d4ec22a6f2d4dfc7b0e99c8e5.svg",
+    "static/media/logo.svg": "/okandogs/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/instagram.svg": "/okandogs/static/media/instagram.4ee07b73f41745c01e7a2c0ea307bb55.svg",
+    "static/media/phone.svg": "/okandogs/static/media/phone.ef0c6731bc434b70470aac126809e68d.svg",
+    "static/media/contactUs.svg": "/okandogs/static/media/contactUs.b366b33f0b41cc36d8d364fc412a7af9.svg",
+    "index.html": "/okandogs/index.html",
+    "static/media/facebook.svg": "/okandogs/static/media/facebook.44388f6e5ed4a7060bafd47a3cadf5e4.svg",
+    "main.8bf4b51e.css.map": "/okandogs/static/css/main.8bf4b51e.css.map",
+    "main.5bca0a53.js.map": "/okandogs/static/js/main.5bca0a53.js.map",
+    "787.061ba23e.chunk.js.map": "/okandogs/static/js/787.061ba23e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8bf4b51e.css",
+    "static/js/main.5bca0a53.js"
+  ]
+}
