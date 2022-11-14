@@ -6,7 +6,7 @@ import Facebook from '../static/img/svg/facebook.svg'
 
 function Footer() {
     return (
-        <div className='grid grid-cols-3 mt-10'>
+        <div className='md:grid grid-cols-3 mt-10'>
             <div></div>
             <div className='flex flex-col items-center gap-3'>
                 <img className='w-72' src={Logo} alt="logo" />

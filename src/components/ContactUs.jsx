@@ -76,8 +76,8 @@ function ContactUs() {
             }
         } else {
             if (val.length <= deepCopy[name].required.len && val.length > 0) {
-                deepCopy[name].errs.status = false            
-                deepCopy[name].errs.showing = true            
+                deepCopy[name].errs.status = false
+                deepCopy[name].errs.showing = true
             }
             else if (val.length === 0) {
                 deepCopy[name].errs.status = false
@@ -106,27 +106,28 @@ function ContactUs() {
             }
         }
 
-        if (valid){
+        if (valid) {
             for (const key in deepCopy) {
                 deepCopy[key].content = ""
             }
             alert("Message Sent")
         }
-        
+
         setFormInfo(deepCopy)
     }
 
     const errStyle = "text-yellow-200 text-sm"
 
     return (
-        <div className='bg-primary-2 p-10'>
+        <div className='bg-primary-2 p-3 md:p-10'>
             <form onSubmit={formHandler}>
                 <h2 className="text-6xl uppercase text-white">Contact Us</h2>
-                <div className='grid grid-cols-12 gap-10'>
-                    <div className="col-span-5 text-white">
+                <div className='flex flex-col flex-col-reverse md:grid grid-cols-12 gap-10'>
+                    {/* ? your info */}
+                    <div className="col-span-full md:col-span-5 text-white">
                         <div className=' flex flex-col gap-5'>
                             <span className="text-2xl underline underline-offset-8">Your Information</span>
-                            <div className='flex gap-3 w-full'>
+                            <div className='flex flex-col md:flex-row gap-3 w-full'>
                                 <div className="flex flex-col gap-3 w-full">
                                     <input type="text" name="fName" id="fName" placeholder='First Name' className='text-center rounded-full w-full text-black' onChange={inputHandler} value={formInfo.fName.content} />
                                     {
@@ -159,34 +160,38 @@ function ContactUs() {
                             <button className='mt-auto py-2 mt-3 bg-primary-1 text-black text-2xl font-bold'>Send</button>
                         </div>
                     </div>
-                    <div className='col-span-3 flex flex-col'>
-                        <div className='text-white'>
-                            <span className='text-2xl underline underline-offset-8'>Your Reason</span>
-                            <ul className='text-left flex flex-col gap-5 '>
-                                <li><input defaultChecked onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="adoption" /> Adoptions</li>
-                                <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="donations" /> Donations, Media</li>
-                                <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="events" /> Events & Fundraising Opportunities</li>
-                                <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="employment" /> Employment</li>
-                                <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="volunteer" /> Volunteering</li>
-                                <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="fostering" /> Fostering</li>
-                                <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="other" /> All Other Inquiries</li>
-                            </ul>
+                    <div className='flex flex-col md:grid grid-cols-2 col-span-7 gap-10'>
+                        {/* ? Your Reason Box */}
+                        <div className='col-span-full md:col-span-1 flex flex-col'>
+                            <div className='text-white'>
+                                <span className='text-2xl underline underline-offset-8'>Your Reason</span>
+                                <ul className='text-left flex flex-col gap-5 '>
+                                    <li><input defaultChecked onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="adoption" /> Adoptions</li>
+                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="donations" /> Donations, Media</li>
+                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="events" /> Events & Fundraising Opportunities</li>
+                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="employment" /> Employment</li>
+                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="volunteer" /> Volunteering</li>
+                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="fostering" /> Fostering</li>
+                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="other" /> All Other Inquiries</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div className='col-span-4 bg-white rounded-xl py-3 px-10'>
-                        <h3 className='text-2xl underline underline-offset-8 mb-5'>Notes</h3>
-                        <div className='text-left flex flex-col gap-3'>
-                            {
-                                !activeInfo ?
-                                    <span>Loading...</span>
-                                    :
-                                    <>
-                                        <span><strong>Person in Charge:</strong> {contactData[activeInfo]?.pic}</span>
-                                        <span><strong>Email: </strong>{contactData[activeInfo]?.email}</span>
-                                        <span><strong>Phone Number: </strong>{contactData[activeInfo]?.phoneNumFormat}</span>
-                                        <span>{contactData[activeInfo]?.notes}</span>
-                                    </>
-                            }
+                        {/* ? Info Box */}
+                        <div className='col-span-full md:col-span-1 bg-white rounded-xl py-3 px-5 md:px-10'>
+                            <h3 className='text-2xl underline underline-offset-8 mb-5'>Notes</h3>
+                            <div className='text-left flex flex-col gap-3'>
+                                {
+                                    !activeInfo ?
+                                        <span>Loading...</span>
+                                        :
+                                        <>
+                                            <span><strong>Person in Charge:</strong> {contactData[activeInfo]?.pic}</span>
+                                            <span><strong>Email: </strong>{contactData[activeInfo]?.email}</span>
+                                            <span><strong>Phone Number: </strong>{contactData[activeInfo]?.phoneNumFormat}</span>
+                                            <span>{contactData[activeInfo]?.notes}</span>
+                                        </>
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
