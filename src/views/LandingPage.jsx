@@ -21,7 +21,7 @@ function LandingPage() {
         <Navbar />
         <DogCarousel />
         <Mission />
-        <div className='flex flex-col md:flex-row justify-evenly mx-[2em]'>
+        <div className='flex flex-col md:flex-row justify-evenly mx-[2em] gap-2'>
             <PictureWidget photoInfo={takeEm[0]} />
             <PictureWidget photoInfo={takeEm[1]} />
             <PictureWidget photoInfo={takeEm[2]} />
@@ -30,6 +30,7 @@ function LandingPage() {
         <AboutUs />
         <ContactUs />
         <Footer />
+        
     </div>
   )
 }

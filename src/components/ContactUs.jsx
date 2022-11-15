@@ -166,13 +166,34 @@ function ContactUs() {
                             <div className='text-white'>
                                 <span className='text-2xl underline underline-offset-8'>Your Reason</span>
                                 <ul className='text-left flex flex-col gap-5 '>
-                                    <li><input defaultChecked onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="adoption" /> Adoptions</li>
-                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="donations" /> Donations, Media</li>
-                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="events" /> Events & Fundraising Opportunities</li>
-                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="employment" /> Employment</li>
-                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="volunteer" /> Volunteering</li>
-                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="fostering" /> Fostering</li>
-                                    <li><input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="other" /> All Other Inquiries</li>
+                                    <li>
+                                        <input defaultChecked onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="adoption" /> 
+                                        <label htmlFor="Adoptions">Adoptions</label>
+                                    </li>
+                                    <li>
+                                        <input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="donations" /> 
+                                        <label htmlFor="Donations, Media">Donations, Media</label>
+                                    </li>
+                                    <li>
+                                        <input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="events" /> 
+                                        <label htmlFor="Events & Fundraising Opportunities">Events & Fundraising Opportunities</label>
+                                    </li>
+                                    <li>
+                                        <input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="employment" /> 
+                                        <label htmlFor="Employment">Employment</label>
+                                    </li>
+                                    <li>
+                                        <input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="volunteer" /> 
+                                        <label htmlFor="Volunteering">Volunteering</label>
+                                    </li>
+                                    <li>
+                                        <input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="fostering" /> 
+                                        <label htmlFor="Fostering">Fostering</label>
+                                    </li>
+                                    <li>
+                                        <input onChange={(e) => setActiveInfo(e.target.value)} type="radio" name="reason" id="reason" value="other" /> 
+                                        <label htmlFor="All Other Inquiries">All Other Inquiries</label>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
